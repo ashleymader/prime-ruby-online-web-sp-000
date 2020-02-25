@@ -4,7 +4,7 @@ def prime?(number)
       return false 
     else
       range = (2..number-1).to_a
-      range.none? do |test_num|
+      range.all? do |test_num|
         number % test_num != 0
         end
     end
