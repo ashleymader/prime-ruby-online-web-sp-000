@@ -6,7 +6,7 @@ def prime?(number)
       range = (2..number-1).to_a
       range.none? do |test_num|
         number % test_num != 0
-        return true
+        return false
       end
     else 
       true
